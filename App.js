@@ -1,27 +1,14 @@
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Login from './src/Screens/LoginScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import LoginStack from './src/Navigation/StackNavigation/LoginStack';
 
 const App = () => {
   return (
-    
+    <NavigationContainer>
+      <LoginStack />
+    </NavigationContainer>
   );
-}
+};
 
 export default App;
